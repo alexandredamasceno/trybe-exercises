@@ -2,7 +2,7 @@
 # **Desenvolvedor Web em formação**👨‍💻
 Este é o início de um grande salto na minha carreira como Desenvolvedor Web full stack ao lado do melhor time de tecnologia, a **Trybe**!
 
-A Trybe é uma escola de desenvolvimento web que tem comprometimento genuíno com o sucesso profissional das pessoas estudantes.São mais de 1500 horas de formação que aborda fundamentos de desenvolvimento web, desenvolvimento, Front-end, Back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
+A Trybe é uma escola de desenvolvimento web que tem comprometimento genuíno com o sucesso profissional das pessoas estudantes. São mais de 1500 horas de formação que aborda fundamentos de desenvolvimento web, Front-end, Back-end, Ciência da Computação, Engenharia de Software, Metodologias Ágeis e Habilidades Comportamentais.
 
 ![Trybe](https://github.com/Junior030/trybe-exercises/blob/master/habilidades.png)
 
