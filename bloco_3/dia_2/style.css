@@ -1,0 +1,55 @@
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+}
+
+ul {
+    background-color: orangered;
+}
+
+p {
+    font-weight: 600;
+    font-size: 3em;
+
+}
+
+body {
+    font-size: 16px;
+
+}
+
+.Paragrafo-lista {
+    background-color: palegreen;
+}
+
+.italic-list {
+    font-style: italic;
+}
+
+.espac-line {
+    line-height: 30px;
+}
+
+.alinh-text {
+    text-align: center;
+
+}
+
+.sub-list {
+    text-decoration: underline;
+}
+
+.yellow-li {
+    background-color: yellow;
+}
+
+.red-li {
+    background-color: red;
+
+}
+
+.brown-li {
+    background-color: rgb(53, 20, 20);
+    color: #fff;
+}
