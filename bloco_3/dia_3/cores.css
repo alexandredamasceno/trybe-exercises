@@ -1,5 +1,6 @@
-div:focus{
-    border: 5px;
+div:focus {
+    border-style: solid;
+    border-color: darkorchid;
 }
 
 .div-primaria {
@@ -7,6 +8,7 @@ div:focus{
     width: 120px;
     text-align: center;
     font-style: italic;
+    
 }
 
 .div-secundaria {
@@ -17,10 +19,13 @@ div:focus{
 
 .div-complementar {
     background-color: rgb(192, 139, 39);
-    width: 170px;
+    width: 200px;
     text-align: center;
     font-style: italic;
+    padding: 1px;
+    font-size: 20px;
 }
+
 
 .div-escura {
     background-color: rgb(8, 8, 7);
