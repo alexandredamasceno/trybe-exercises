@@ -1,0 +1,37 @@
+div:focus{
+    border: 5px;
+}
+
+.div-primaria {
+    background-color: blue;
+    width: 120px;
+    text-align: center;
+    font-style: italic;
+}
+
+.div-secundaria {
+    background-color: orange;
+    width: 140px;
+    text-align: center;
+}
+
+.div-complementar {
+    background-color: rgb(192, 139, 39);
+    width: 170px;
+    text-align: center;
+    font-style: italic;
+}
+
+.div-escura {
+    background-color: rgb(8, 8, 7);
+    width: 110px;
+    text-align: center;
+    color: #fff;
+}
+
+.div-clara {
+    background-color: rgb(248, 232, 14);
+    width: 100px;
+    text-align: center;
+    font-style: italic;
+}
