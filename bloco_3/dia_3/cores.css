@@ -1,37 +1,45 @@
-.div-primaria {
-    background-color: blue;
-    width: 120px;
-    text-align: center;
-    font-style: italic;
-    
+/*REFERÊNCIA: Eu não conseguia fazer essa parte do css sem usar class ou id. Só aprendi como faz depois de olhar o código do meu colega de turma Thiago Kachinsky. Este é o link do css dele no github:     https://github.com/ThiagoKachi/trybe-exercises/blob/exercises/3.3/exercises/bloco_3/dia_3/style3-2.css */
+
+
+div:hover {
+    border: solid 1px;
+    border-color: cyan;
+    border-width: 5px;
 }
 
-.div-secundaria {
-    background-color: orange;
-    width: 140px;
-    text-align: center;
-}
-
-.div-complementar {
-    background-color: rgb(192, 139, 39);
-    width: 200px;
-    text-align: center;
-    font-style: italic;
-    padding: 1px;
-    font-size: 20px;
-}
-
-
-.div-escura {
-    background-color: rgb(8, 8, 7);
-    width: 110px;
-    text-align: center;
+div:active {
     color: #fff;
 }
 
-.div-clara {
-    background-color: rgb(248, 232, 14);
-    width: 100px;
-    text-align: center;
+div:nth-of-type(1) {
+    background-color: blue;
+    width: 130px;
+    font-style: italic;
+}
+
+div:nth-of-type(2) {
+    background-color: orange;
+    width: 140px;   
+}
+
+div:nth-of-type(3) {
+    background-color: rgb(4, 94, 67);
+    width: 190px;
+    font-style: italic;
+    padding: 4px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div:nth-of-type(4) {
+    background-color: rgb(29, 21, 21);
+    color: #fff;
+    width: 130px; 
+}
+
+div:nth-of-type(5) {
+    background-color: rgb(238, 255, 0);
+    width: 130px;
     font-style: italic;
 }
