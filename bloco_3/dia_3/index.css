@@ -52,7 +52,7 @@ ol li{
 
 a{
     text-decoration: none;
-    color: black;
+    
 }
 
 
@@ -68,6 +68,10 @@ ul.houveraliados li:hover {
 .verde-li:hover {
     color: green;
 
+}
+
+.preto-li:hover{
+    color: black;
 }
 
 .amarela-li:hover {
