@@ -53,3 +53,16 @@ if (numero_1 >= 0) {
 } else {
     console.log("negative")
 }
+
+console.log("Quinto Requisito:")
+
+let angulo1 = 60;
+let angulo2 = 60;
+let angulo3 = 60;
+let somaAng = 180;
+
+if (angulo1 + angulo2 + angulo3 == somaAng) {
+    console.log(angulo1 + angulo2 + angulo3 == somaAng)
+} else {
+    console.log(angulo1 + angulo2 + angulo3 == somaAng)
+}
