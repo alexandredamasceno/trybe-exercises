@@ -116,6 +116,7 @@ if (nota >= 90) {
 }
 
 console.log("Oitavo Requisito")
+console.log("Tem pelo menos um par?")
 
 
 let num_1 = 10;
@@ -127,4 +128,20 @@ if ((num_1 || num_2 || num_3) %2 ==0) {
 } else {
     console.log((num_1 || num_2 || num_3) %2 ==0)
 }
+
+console.log("Nono Requisito:")
+console.log("Tem pelo menos um ímpar?")
+
+let numero_1 = 15;
+let numero_2 = 10;
+let numero_3 = 10;
+
+
+if ((numero_1 || numero_2 || numero_3)%2 != 0) {
+    console.log((numero_1 || numero_2 || numero_3)%2 != 0)
+} else {
+    console.log((numero_1 || numero_2 || numero_3)%2 != 0)
+}
+    
+
 
