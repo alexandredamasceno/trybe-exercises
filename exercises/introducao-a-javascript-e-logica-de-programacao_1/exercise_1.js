@@ -158,5 +158,41 @@ if (custoProdutoMaisImposto <= valorDeVenda) {
     console.log("Erro")
 }
 
+console.log("Décimo Primeiro Requisito:")
+console.log("Salário Líquido:")
+
+let salarioBase = 3000;
+// let aliquotaBaseInss;
+// Eu cheguei a olhar o gabarito do Course para me situar, pois, tinha travado no início, mas depois eu fiz do meu próprio jeito, levando em conta o salário inicial(base) e o salário final (IR). As aliquotas eu adicionei dentros das estruturas condicionais. Obrigado, pela compreensão.
+
+if (salarioBase <= 1556.94) {
+    salarioBase = salarioBase - (salarioBase * 0.08);
+} else if (salarioBase <= 2594.92) {
+    salarioBase = salarioBase - (salarioBase * 0.09);
+} else if (salarioBase <= 5189.82) {
+    salarioBase = salarioBase - (salarioBase * 0.11);
+} else  {
+    salarioBase = salarioBase - 570.88;
+}
+
+let salarioBaseIr;
+
+if (salarioBase <= 1903.98) {
+    salarioBaseIr = salarioBase;
+} else if (salarioBase <= 2826.65) {
+    salarioBaseIr = salarioBase - ((salarioBase*0.075) - 142.80)
+} else if (salarioBase <= 3751.05) {
+    salarioBaseIr = salarioBase - ((salarioBase*0.15) - 354.80);
+} else if (salarioBase <= 4664.68) {
+    salarioBaseIr = salarioBase - ((salarioBase*0.225) - 636.13);
+} else {
+    salarioBaseIr = salarioBase ((salarioBase*0.275) - 869.36);
+}
+
+console.log(salarioBaseIr +",00");
+
+
+
+
 
 
