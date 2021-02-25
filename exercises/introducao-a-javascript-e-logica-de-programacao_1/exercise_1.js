@@ -66,3 +66,33 @@ if (angulo1 + angulo2 + angulo3 == somaAng) {
 } else {
     console.log(angulo1 + angulo2 + angulo3 == somaAng)
 }
+
+console.log("Sexto Requisito:")
+
+let peca = "Torre" .toLowerCase();
+
+switch (peca) {
+    case "rei":
+        console.log("Anda uma casa por lance em todas as direções")
+        break;
+    case "torre":
+        console.log("Movimentos paralelos (linhas ou colunas) quantas casas desejar desde que haja espaço livre.")
+        break;
+    case "rainha"||"damas":
+        console.log("Movimentos paralelos (linhas ou colunas) e diagonais quantas casas desejar desde que haja espaço livre.")
+        break;
+    case "bispo":
+        console.log("movimento é sempre em diagonal, obedecendo à cor de sua casa inicial.")
+        break;
+    case "cavalo":
+        console.log("O cavalo anda em um formato que reproduz a letra L, ou seja, duas casas, na direção horizontal ou vertical, e mais uma, em angulo reto à direção anterior")
+        break;
+    case "peão":
+        console.log("Movimento: uma casa desocupada à frente. Quando o peão está em sua casa inicial, pode mover-se uma ou duas casas adiante, somente no primeiro movimento de cada peão.")
+        break;
+    default: console.log("Erro: peça invalida! Tente novamente.")
+}
+
+//Aprendi a converter as palavras em minúsculas usando o .toLowerCase() no site:https://qastack.com.br/programming/154862/convert-javascript-string-to-be-all-lower-case
+
+
