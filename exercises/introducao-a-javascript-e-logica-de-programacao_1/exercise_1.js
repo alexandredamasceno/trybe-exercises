@@ -115,4 +115,16 @@ if (nota >= 90) {
     console.log("F");
 }
 
+console.log("Oitavo Requisito")
+
+
+let num_1 = 10;
+let num_2 = 15;
+let num_3 = 5;
+
+if ((num_1 || num_2 || num_3) %2 ==0) {
+    console.log((num_1 || num_2 || num_3) %2 ==0)
+} else {
+    console.log((num_1 || num_2 || num_3) %2 ==0)
+}
 
