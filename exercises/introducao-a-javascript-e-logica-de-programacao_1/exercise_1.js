@@ -142,6 +142,21 @@ if ((numero_1 || numero_2 || numero_3)%2 != 0) {
 } else {
     console.log((numero_1 || numero_2 || numero_3)%2 != 0)
 }
-    
+
+console.log("Décimo Requisito:")
+//Custo inicial do produto = 10,00 + 20% imposto = 12,00. Ou seja, Ocorrerá uma redução de 12,00 por unidade vendida.
+
+let custoProdutoMaisImposto = 12;
+let valorDeVenda = 50;
+let unidadesVendidas = 1000;
+let valorCustoTotal = custoProdutoMaisImposto * unidadesVendidas;
+
+if (custoProdutoMaisImposto <= valorDeVenda) {
+    console.log("Lucro Total:")
+    console.log((valorDeVenda * unidadesVendidas) - valorCustoTotal +",00");
+} else {
+    console.log("Erro")
+}
+
 
 
