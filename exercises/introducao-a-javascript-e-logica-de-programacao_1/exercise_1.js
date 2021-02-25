@@ -44,3 +44,12 @@ if (numero1 > numero2 && numero1 > numero3) {
     console.log(numero3)
 }
 
+console.log("Quarto Requisito:")
+
+let numero_1 = 100;
+
+if (numero_1 >= 0) {
+    console.log("positive")
+} else {
+    console.log("negative")
+}
