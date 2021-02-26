@@ -77,3 +77,15 @@ for (let cont = 0; cont < numbers.length; cont +=1){
     }
 }
 console.log(menor)
+
+
+console.log("Oitavo Requisito:")
+
+// Nesse caso, o operador de "+" (adição) depois de tentativas e erros, acabou se tornando mais um "acrescentador" do que um "somador".
+
+let arrayResultado = [];
+
+for (let index_cont = 1; index_cont < 26; index_cont +=1){
+    arrayResultado = arrayResultado+ ", " + index_cont;
+}
+console.log(arrayResultado)
