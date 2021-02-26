@@ -81,11 +81,23 @@ console.log(menor)
 
 console.log("Oitavo Requisito:")
 
-// Nesse caso, o operador de "+" (adição) depois de tentativas e erros, acabou se tornando mais um "acrescentador" do que um "somador".
+// Na minha primeira tentativa eu fiz de um jeito que no exercício seguinte me trouxe problemas, então olhei o gabarito e vi que não me dei conta do push. Mas tudo bem, eu entendi que o push "empurra", ou seja, adiciona valores a um determinado Array.
+
+// let arrayResultado = [];
+
+// for (let index_cont = 1; index_cont < 26; index_cont +=1){
+//     arrayResultado = arrayResultado+ index_cont;
+// }
+// console.log(arrayResultado)
 
 let arrayResultado = [];
 
 for (let index_cont = 1; index_cont < 26; index_cont +=1){
-    arrayResultado = arrayResultado+ ", " + index_cont;
+    arrayResultado.push(index_cont);
 }
 console.log(arrayResultado)
+
+
+
+
+
