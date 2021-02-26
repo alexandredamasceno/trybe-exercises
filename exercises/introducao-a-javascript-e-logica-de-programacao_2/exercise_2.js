@@ -37,3 +37,15 @@ if (mediaAritmetica > 20){
 } else {
     console.log("valor menor que 20");
 }
+
+console.log("Quinto Requisito");
+// Essa eu travei na parte do if, então acabei olhando o gabarito. Abstrai o que estava no gabarito, aprendi o processo.
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let maior = 0;
+
+for (let cont = 0; cont < numbers.length; cont +=1){
+    if (numbers[cont] > maior){
+        maior = numbers[cont];
+    }
+}
+console.log(maior)
