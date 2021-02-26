@@ -64,3 +64,16 @@ for (let indice = 0; indice < numbers.length; indice +=1) {
     }
 }
 console.log(impares)
+
+
+console.log("Sétimo Requisito");
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let menor = 100;
+
+for (let cont = 0; cont < numbers.length; cont +=1){
+    if (numbers[cont] < menor){
+        menor = numbers[cont];
+    }
+}
+console.log(menor)
