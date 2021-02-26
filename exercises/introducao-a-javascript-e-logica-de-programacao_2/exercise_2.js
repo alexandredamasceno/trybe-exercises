@@ -98,6 +98,17 @@ for (let index_cont = 1; index_cont < 26; index_cont +=1){
 console.log(arrayResultado)
 
 
+console.log("Nono requisito:")
 
+
+let arrayResultado = [];
+
+for (let index_cont = 1; index_cont < 26; index_cont +=1){
+    arrayResultado.push(index_cont);
+}
+
+for (let indexDiv = 0; indexDiv < arrayResultado.length; indexDiv +=1){
+    console.log(arrayResultado[indexDiv] /2);
+}
 
 
