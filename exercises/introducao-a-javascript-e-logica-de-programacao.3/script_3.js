@@ -13,7 +13,8 @@ for (let index = 1; index < n; index +=1) {
 
 console.log("Segundo Item");
 // Mais uma vez eu busquei orientação no gabarito do Course.
-let n2 = 6;
+
+let n = 6;
 let asterisco = "*";
 let triangulo = "";
 
@@ -24,28 +25,28 @@ for (let indexRet = 1; indexRet <=n2; indexRet +=1){
 
 console.log("Terceiro Item")
 
-let n4 = 6;
-let asterisco2 = "*";
+
+let n = 6;
+let asterisco = "*";
 let triangulo2 = "";
 
-for (let index3 = 1; index3 <= n4; index3 +=1){
+for (let index3 = 1; index3 < n; index3 +=1){
   if (index3 == 1){
-  console.log("     "+ triangulo2);
-  triangulo2 = triangulo2 + asterisco2;
-} else if (index3 == 2){
+  triangulo2 = triangulo2 + asterisco;
   console.log("    "+ triangulo2);
-  triangulo2 = triangulo2 + asterisco2;
+} else if (index3 == 2){
+  triangulo2 = triangulo2 + asterisco;
+  console.log("   "+ triangulo2);
 } else if (index3 == 3){
-  console.log("   " + triangulo2);
-  triangulo2 = triangulo2 + asterisco2;
-} else if (index3 == 4){
+  triangulo2 = triangulo2 + asterisco;
   console.log("  " + triangulo2);
-  triangulo2 = triangulo2 + asterisco2;
-} else if (index3 == 5){
+} else if (index3 == 4){
+  triangulo2 = triangulo2 + asterisco;
   console.log(" " + triangulo2);
-  triangulo2 = triangulo2 + asterisco2;
-} else if (index3 == 6){
+} else if (index3 == 5){
+  triangulo2 = triangulo2 + asterisco;
   console.log("" + triangulo2);
-  triangulo2 = triangulo2 + asterisco2;
-} 
 }
+}
+
+
