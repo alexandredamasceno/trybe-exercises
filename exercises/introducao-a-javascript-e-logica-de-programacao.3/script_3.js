@@ -18,9 +18,9 @@ let n = 6;
 let asterisco = "*";
 let triangulo = "";
 
-for (let indexRet = 1; indexRet <=n2; indexRet +=1){
-  console.log(triangulo);
+for (let indexRet = 1; indexRet < n; indexRet +=1){
   triangulo = triangulo + asterisco;
+  console.log(triangulo);
 }
 
 console.log("Terceiro Item")
