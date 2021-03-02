@@ -13,6 +13,7 @@
   console.log(analisaPalindrome("Desenvolvedor"))
 
   console.log("Segundo Item")
+  //Achar chave de maior valor
 
   function maiorKey (chave){
   let maiorChave = 0;
@@ -25,3 +26,19 @@
   return maiorChave
 }
   console.log(maiorKey([2, 3, 6, 7, 10, 1]))
+
+  console.log("Terceiro requisito")
+//Achar a chave de menor valor
+//Busquei orientação no gabarito. Entendi todo o conceito.
+
+  function menorKey (chave){
+    let menorChave = 0;
+  
+    for (let key in chave){
+      if (chave[menorChave] > chave[key]) {
+        menorChave = key;
+      }
+    }
+    return menorChave
+  }
+  console.log(menorKey([2, 4, 6, 7, 10, 0, -3]))
