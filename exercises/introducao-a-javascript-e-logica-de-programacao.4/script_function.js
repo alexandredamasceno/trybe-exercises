@@ -11,3 +11,17 @@
 
   console.log(analisaPalindrome("arara"))
   console.log(analisaPalindrome("Desenvolvedor"))
+
+  console.log("Segundo Item")
+
+  function maiorKey (chave){
+  let maiorChave = 0;
+
+  for (let key in chave){
+    if (chave[key] > maiorChave){
+      maiorChave = [key]
+    }
+  }
+  return maiorChave
+}
+  console.log(maiorKey([2, 3, 6, 7, 10, 1]))
