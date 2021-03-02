@@ -11,3 +11,9 @@ let info = {
   info.recorrente = "Sim";
 
   console.log(info)
+
+  console.log("Terceiro Item");
+
+  for (let key in info) {
+      console.log(key);
+  }
