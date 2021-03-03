@@ -42,3 +42,44 @@
     return menorChave
   }
   console.log(menorKey([2, 4, 6, 7, 10, 0, -3]))
+
+  console.log("Quarto requisito")
+
+  function retornaMaiorNome (nome){
+    let maiorNome = nome[0];
+    for (let index in nome){
+      if (maiorNome.length < nome[index].length){
+      maiorNome = nome[index];
+    }
+  }
+  return maiorNome
+}
+console.log(retornaMaiorNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']))
+
+console.log("Quinto requisito")
+
+function numerMaisRepetido (numero){
+  let maisRepetido = 0;
+
+  for (let key in numero){
+    if (numero[maisRepetido] == numero[key]){
+      maisRepetido = numero[key]
+    }
+  }
+  return maisRepetido
+}
+  console.log(numerMaisRepetido([2, 3, 2, 5, 8, 2, 3,]))
+
+  function numerMaisRepetido (numero){
+    let maisRepetido = 0;
+    let numerosRepetidos = 0;
+    
+  
+    for (let key in numero){
+      if (){
+        maisRepetido = numero[key]
+      }
+    }
+    return maisRepetido
+  }
+    console.log(numerMaisRepetido([2, 3, 2, 5, 8, 2, 3]))
