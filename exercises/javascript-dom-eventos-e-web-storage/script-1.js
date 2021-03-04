@@ -11,6 +11,12 @@ function changesColor (color){
 changesColor("rgb(76,164,109)")
 
 function changesColorSquare (color){
-    document.getElementsByClassName("center-content")[0].style.backgroundColor = color
+    document.getElementsByClassName("center-content")[0].style.backgroundColor = color;
 }
 changesColorSquare("white")
+
+function fixText (text){
+    document.querySelector("h1").innerText = text;
+}
+
+fixText ("Exercício 5.1 - JavaScript")
