@@ -57,15 +57,11 @@
   </head>
   <body>
     <script>
-      let adicionaHeading = document.getElementsByTagName("body");
-      for (let i in adicionaHeading){
-          let adiciona = adicionaHeading[i];
+    //Primeiro requisito
+      let criah1 = document.createElement("h1");
+      criah1.innerText= "Exercício 5.2 - JavaScript DOM";
+      document.body.appendChild(criah1)
 
-          let criaHeading = document.createElement("h1");
-          criaHeading.innerText="Exercício 5.2 - JavaScript DOM";
-
-          adiciona.appendChild(criaHeading);
-      }
     </script>
   </body>
 </html>
