@@ -62,6 +62,15 @@
       criah1.innerText= "Exercício 5.2 - JavaScript DOM";
       document.body.appendChild(criah1)
 
+    //Função que cria elementos filhos
+      function criaElementsBody (filho, className){
+          let criaElement = document.createElement(filho)
+          criaElement.className=className;
+          document.body.appendChild(criaElement)
+      }
+      //Segundo requisito 
+      criaElementsBody("div", "main-content")
+
     </script>
   </body>
 </html>
