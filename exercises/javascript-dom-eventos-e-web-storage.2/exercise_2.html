@@ -107,8 +107,19 @@
 
       addImage.appendChild(criaImage)
 
-      
-      
+    //Oitavo requisito
+      let addListToDiv = document.querySelector(".right-content");
+      let criaUlToDiv = document.createElement("ul")
+      addListToDiv.appendChild(criaUlToDiv);
+      let numerosExtenso = ["Um","Dois", "Três", "Quatro", "Cinco", "Seis", "Sete", "Oito", "Nove", "Dez"]
+      for (let i in numerosExtenso){
+          let numerosLista = numerosExtenso[i]
+
+          let criaListItens = document.createElement("li");
+          criaListItens.innerHTML= numerosLista
+
+          criaUlToDiv.appendChild(criaListItens);
+      }
     </script>
   </body>
 </html>
