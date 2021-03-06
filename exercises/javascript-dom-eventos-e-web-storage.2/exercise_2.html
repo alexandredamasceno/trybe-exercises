@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+    //Primeiro requisito 
+      let criah1 = document.createElement("h1");
+      criah1.innerText= "Exercício 5.2 - JavaScript DOM";
+      document.body.appendChild(criah1)
+
+      criah1.className="title";
+
+    //Função que cria elementos filhos
+      function criaElementsBody (filho, className){
+          let criaElement = document.createElement(filho)
+          criaElement.className=className;
+          document.body.appendChild(criaElement)
+      }
+      //Segundo requisito 
+      criaElementsBody("div", "main-content")
+
+      //Terceiro requisito
+      criaElementsBody("div", "center-content")
+
+      //Quarto requisito
+      let criaParagrafo = document.createElement("p");
+      let addPToDiv2 = document.querySelector(".center-content")
+      addPToDiv2.appendChild(criaParagrafo).innerText ="Adiciona parágrafo a segunda div";
+
+      //Quinto requisito
+      let criaDivToDiv1 = document.createElement("div");
+      
+      criaDivToDiv1.className="left-content";
+      
+      let addToDiv1 = document.querySelector(".main-content");
+      
+      addToDiv1.appendChild(criaDivToDiv1);
+
+      //Sexto requisito
+      let criaDiv2ToDiv1 = document.createElement("div");
+      
+      criaDiv2ToDiv1.className="right-content";
+      
+      let add2ToDiv1 = document.querySelector(".main-content");
+      
+      add2ToDiv1.appendChild(criaDiv2ToDiv1);
+      
+      //Sétimo requisito
+      let criaImage = document.createElement("img");
+
+      criaImage.className="small-image";
+      criaImage.src="https://picsum.photos/200";
+
+      let addImage = document.querySelector(".left-content");
+
+      addImage.appendChild(criaImage)
+
+    //Oitavo requisito
+      let addListToDiv = document.querySelector(".right-content");
+      let criaUlToDiv = document.createElement("ul")
+      addListToDiv.appendChild(criaUlToDiv);
+      let numerosExtenso = ["Um","Dois", "Três", "Quatro", "Cinco", "Seis", "Sete", "Oito", "Nove", "Dez"]
+      for (let i in numerosExtenso){
+          let numerosLista = numerosExtenso[i]
+
+          let criaListItens = document.createElement("li");
+          criaListItens.innerHTML= numerosLista
+
+          criaUlToDiv.appendChild(criaListItens);
+      }
+
+    //Nono requisito
+      let div1 = document.querySelector(".main-content");
+     
+      for (let i = 0; i < 3; i +=1){
+          let heading = [i];
+
+          let criaH3 = document.createElement("h3");
+          heading = criaH3;
+          criaH3.className="description"
+
+          div1.appendChild(heading);
+      }
+
+    //Décimo terceiro requisito
+    let removeFilho = document.querySelector(".left-content");
+    let pai = document.querySelector(".main-content");
+    pai.removeChild(removeFilho)
+     
+
+     //Décimo quinto requsito
+
+     document.querySelector(".right-content").style.marginRight="auto";
+
+     //Décimo sexto requisito
+     document.querySelector(".center-content").style.backgroundColor="green"
+
+    //  Décimo sétimo requisito
+    document.querySelector("ul").lastElementChild.remove();
+    document.querySelector("ul").lastElementChild.remove()
+    </script>
+  </body>
+</html>
