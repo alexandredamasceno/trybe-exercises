@@ -24,7 +24,22 @@ function createDaysOfTheWeek() {
 
     let criaListItens = document.createElement("li");
     criaListItens.innerHTML= itens;
+    criaListItens.className="day"
+
+    if (dezDaysList[i] === 24){
+      criaListItens.className="holiday day"
+    }else if (dezDaysList[i] === 31){
+      criaListItens.className="holiday day"
+    }else if(dezDaysList[i] === 25){
+      criaListItens.className="holiday day friday"
+    }else if(dezDaysList[i] === 4){
+      criaListItens.className="day friday"
+    }else if(dezDaysList[i] === 11){
+      criaListItens.className="day friday"
+    }else if(dezDaysList[i] === 18){
+      criaListItens.className="day friday"
+    }
+
 
     listaPai.appendChild(criaListItens);
   }
-  
