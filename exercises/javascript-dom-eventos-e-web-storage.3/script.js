@@ -135,3 +135,14 @@ function lowCase (){
 
 }
 lowCase();
+
+//Exercício 7
+function tarefaPerson (string){
+  let paiTarefa = document.querySelector(".my-tasks");
+  let tarefaFilho = document.createElement("span");
+  tarefaFilho.innerHTML=string;
+
+  paiTarefa.appendChild(tarefaFilho);
+}
+tarefaPerson("Cozinhar");
+
