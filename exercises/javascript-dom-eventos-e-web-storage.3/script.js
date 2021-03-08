@@ -77,3 +77,17 @@ function createDaysOfTheWeek() {
 
   }
 backgroundHolidays()
+
+  //Exercício 4
+
+  function fridayDay (string) {
+    let paiFriday = document.querySelector(".buttons-container");
+    let fridayChild = document.createElement("button");
+    fridayChild.innerHTML=string;
+    fridayChild.id="btn-friday"
+
+    paiFriday.appendChild(fridayChild)
+
+  }
+
+  fridayDay("Sexta-feira")
