@@ -91,3 +91,25 @@ backgroundHolidays()
   }
 
   fridayDay("Sexta-feira")
+
+  //Exercício 5
+
+  function fridayText (array) {
+    let buttonFriday = document.querySelector("#btn-friday");
+    let fridayDays = document.querySelectorAll(".friday");
+    let fridayArray = array
+    let newText = "SEXTOU!!!";
+
+    buttonFriday.addEventListener("click", function(){
+        for (let key = 0; key < fridayDays.length; key +=1){
+          if (fridayDays[key].innerHTML !== newText){
+            fridayDays[key].innerHTML = newText;
+          }else {
+            fridayDays[key].innerHTML = fridayArray[key];
+          }
+        }
+    })
+  }
+  
+
+  fridayText([4, 11, 18, 25]);
