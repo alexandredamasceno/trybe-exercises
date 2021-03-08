@@ -110,6 +110,28 @@ backgroundHolidays()
         }
     })
   }
-  
-
   fridayText([4, 11, 18, 25]);
+
+  //Exercício 6
+  function upperCase (){
+
+    let daysWeek = document.querySelector("#days");
+
+    daysWeek.addEventListener("mouseover",function(evento){
+      evento.target.style.fontSize = "30px";
+      evento.target.style.fontWeight = "600";
+    })
+  }
+upperCase()
+   
+function lowCase (){
+
+  let daysWeek = document.querySelector("#days");
+
+  daysWeek.addEventListener("mouseout", function(evento){
+    evento.target.style.fontSize="20px";
+    evento.target.style.fontWeight="300"
+  })
+
+}
+lowCase();
