@@ -17,3 +17,5 @@ for (let i = 0; i < estadosBr.length; i += 1){
     estadoPai.appendChild(criaEstados)
 }
 
+
+
