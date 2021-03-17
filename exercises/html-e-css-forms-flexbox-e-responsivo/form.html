@@ -39,10 +39,10 @@
                 </select>
                 <br>
                 <br>
-                <label for="input-tipo-casa">Tipo</label>
-                <input type="radio" name="tipo" id="input-tipo-casa"checked>Casa
-                <label for="input-tipo-ape"></label>
-                <input type="radio" name="tipo" id="input-tipo-ape">Apartamento
+                <label for="input-tipo-casa">Tipo <input type="radio" name="tipo" id="input-tipo-casa"checked>Casa</label>
+               
+                <label for="input-tipo-ape"><input type="radio" name="tipo" id="input-tipo-ape">Apartamento</label>
+                
             </fieldset>
             <fieldset>
                 <legend>Último emprego</legend>
@@ -57,7 +57,12 @@
                 <br>
                 <label for="input-description-cargo">Descrição do cargo:</label><br>
                 <input type="text" name="description-cargo" id="input-description-cargo "maxlength="500"required>
+                <br>
+                <br>
+                <label for="input-data">Data de Início:</label>
+                <input type="text" name="data" id="input-data"placeholder="dd/mm/aaaa" required>              
             </fieldset>
+            <button type="submit"id="salvar">Salvar</button>
         </div>
     </form>
     <script src="script.js"></script>
