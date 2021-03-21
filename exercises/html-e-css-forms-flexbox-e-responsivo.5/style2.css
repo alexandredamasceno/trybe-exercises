@@ -1,0 +1,83 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+@media screen and (max-width: 375px){
+
+body p {
+    font-size: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: aquamarine;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container ul {
+    display: none;
+}
+
+.header-container h1 {
+    font-size: 23px;
+}
+
+.aside-container {
+    display: flex;
+    justify-content: center;
+}
+
+.aside-container h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+.aside-one {
+    width: 150px;
+    margin-right: 50px;
+}
+
+.aside-two {
+    width: 150px;
+    
+}
+
+.aside-one ul li {
+    list-style: none;
+    padding-top: 5px;
+}
+
+.aside-two ul li {
+    list-style: none;
+    padding-top: 5px;
+    
+}
+
+.main-content h1 {
+    font-size: 20px;
+}
+
+.main-content {
+    margin:10px 15px;
+    padding-top: 20px;
+}
+
+hr {
+    width: 90px;
+}
+
+footer {
+    background-color: aquamarine;
+}
+
+.footer-items {
+    margin: 0 15px;
+    padding: 7px 0;
+}
+
+}
