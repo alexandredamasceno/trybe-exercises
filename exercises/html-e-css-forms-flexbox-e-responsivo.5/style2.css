@@ -25,11 +25,24 @@ body p {
 
 .header-container h1 {
     font-size: 23px;
+    text-align: center;
 }
 
 .aside-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding: 0 10px;
+}
+
+li {
+    list-style: none;
+    padding-top: 5px;
+}
+
+ul {
+    padding: 0;
+
 }
 
 .aside-container h2{
@@ -39,7 +52,6 @@ body p {
 
 .aside-one {
     width: 150px;
-    margin-right: 50px;
 }
 
 .aside-two {
@@ -47,16 +59,6 @@ body p {
     
 }
 
-.aside-one ul li {
-    list-style: none;
-    padding-top: 5px;
-}
-
-.aside-two ul li {
-    list-style: none;
-    padding-top: 5px;
-    
-}
 
 .main-content h1 {
     font-size: 20px;
@@ -81,3 +83,73 @@ footer {
 }
 
 }
+
+@media screen and (max-width: 800px) and (min-width: 376px){
+    body p {
+        font-size: 20px;
+    }
+    
+    ul {
+        padding: 0;
+    }
+
+    hr {
+        width: 90px;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-around;
+        background-color: aquamarine;
+        align-items: center;
+    }
+
+    .header-container nav ul {
+        display: flex;
+        padding: 0;
+    }
+
+    .header-container nav ul li {
+        margin-left: 20px;
+        list-style: none;
+    }
+
+    .aside-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .aside-container ul li {
+        list-style: none;
+        margin-bottom: 3px;
+        font-size: 20px;
+    }
+
+    .main-content {
+        margin:10px 20px;
+        padding-top: 20px;
+    }
+
+    .main-content p {
+        font-size: 25px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        background-color: aquamarine;
+        padding-bottom: 20px;
+        padding: 5px 20px;
+    }
+
+    .footer-items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-items p {
+        width: 400px;
+    }
+    
+}
+
