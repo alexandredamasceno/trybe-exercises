@@ -78,58 +78,93 @@ const lesson1 = {
     turno: 'noite',
   };
 
-  function adicionaNewTurno(objeto, chave, valor) {
-    objeto[chave] = valor;
-  }
+function adicionaNewTurno(objeto, chave, valor) {
+  objeto[chave] = valor;
+}
 
-  adicionaNewTurno(lesson2, 'turno', 'manhã');
-  console.log(lesson2);
+adicionaNewTurno(lesson2, 'turno', 'manhã');
+console.log(lesson2);
 
-  //Item 2:
-  function listaKeys(objeto) {
-    const array = Object.keys(objeto);
-    for (let i in array){
-        console.log('-----------');
-        console.log(array[i]);
-    }
+//Item 2:
+function listaKeys(objeto) {
+  const array = Object.keys(objeto);
+  for (let i in array){
+      console.log('-----------');
+      console.log(array[i]);
   }
-  listaKeys(lesson1);
+}
+listaKeys(lesson1);
 
   //Item 3:
-  function sizeObj(objeto) {
-    const obj = Object.keys(objeto).length;
-    console.log(`Size = ${obj}`);
+function sizeObj(objeto) {
+  const obj = Object.keys(objeto).length;
+  console.log(`Size = ${obj}`);
+}
+sizeObj(lesson1);
+
+// Item 4:
+function listaValues(objeto) {
+    const valores = Object.values(objeto);
+    for (let i in valores){
+        console.log(`Valores = ${valores[i]}`);
+    }
+}
+listaValues(lesson1);
+
+//Item 5:
+const allLessons = Object.assign({}, {lesson1}, {lesson2}, {lesson3});
+
+console.log(allLessons);
+//Item 6:
+function totalStudents() {
+  const alunos1 = allLessons.lesson1.numeroEstudantes;
+  const alunos2 = allLessons.lesson2.numeroEstudantes;
+  const alunos3 = allLessons.lesson3.numeroEstudantes;
+  
+  console.log(alunos1);
+  console.log(alunos2);
+  console.log(alunos3); 
+  
+  const total = alunos1 + alunos2 + alunos3;
+  console.log(total);
+}
+totalStudents();
+
+function totalDeAlunos(objeto) {
+  const allKeys = Object.keys(objeto);
+  let total = 0;
+
+  for (let i in allKeys){
+    total += objeto[allKeys[i]].numeroEstudantes;
   }
-  sizeObj(lesson1);
+  return total;
+}
+console.log(totalDeAlunos(allLessons));
 
-  // Item 4:
-  function listaValues(objeto) {
-      const valores = Object.values(objeto);
-      for (let i in valores){
-          console.log(`Valores = ${valores[i]}`);
-      }
+//item 7: 
+
+function mostraValor(objeto, indice) {
+  const valorObjeto = Object.values(objeto);
+
+  console.log(valorObjeto[indice]);
+}
+
+mostraValor(lesson1, 0);
+
+//Item 8:
+
+function validaChaveEValor(objeto, chave, valor) {
+  const pares = Object.entries(objeto);
+  let valido = false;
+
+  for (let i in pares){
+    if (pares[i][0] === chave && pares[i][1] === valor){
+      valido = true;
+    }
   }
-  listaValues(lesson1);
-
-  //Item 5:
-  const allLessons = Object.assign({}, {lesson1}, {lesson2}, {lesson3});
-
-  console.log(allLessons);
-
-  function totalStudents() {
-    const alunos1 = allLessons.lesson1.numeroEstudantes;
-    const alunos2 = allLessons.lesson2.numeroEstudantes;
-    const alunos3 = allLessons.lesson3.numeroEstudantes;
-    
-    console.log(alunos1);
-    console.log(alunos2);
-    console.log(alunos3); 
-    
-    const total = alunos1 + alunos2 + alunos3;
-    console.log(total);
-  }
-  totalStudents();
-
-
+  return valido;
+}
+console.log(validaChaveEValor(lesson3, 'turno', 'noite'));
+console.log(validaChaveEValor(lesson3, 'materia', 'Maria Clara'))
   
   
