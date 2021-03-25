@@ -168,3 +168,120 @@ console.log(validaChaveEValor(lesson3, 'turno', 'noite'));
 console.log(validaChaveEValor(lesson3, 'materia', 'Maria Clara'))
   
   
+//Apenas exercícios feitos em aula:
+
+//Exercício aula parte I:
+const myObject = {};
+
+function criaObj (objeto, chave, valor) {
+    objeto[chave] = valor;
+}
+criaObj(myObject, 'nome', 'Alexandre');
+
+console.log(myObject);
+
+//Exercício aula part II:
+const student1 = {
+    Html: 'Muito Bom',
+    Css: 'Bom',
+    JavaScript: 'Ótimo',
+    SoftSkills: 'Ótimo',
+  };
+  
+  const student2 = {
+    Html: 'Bom',
+    Css: 'Ótimo',
+    JavaScript: 'Ruim',
+    SoftSkills: 'Ótimo',
+    Git: 'Bom', // chave adicionada
+  };
+//Jeito 1:
+function criaHabilidades(student) {
+    const guardaKeys = Object.keys(student);
+    const guardaValues = Object.values(student)
+    for (let index = 0; index < guardaKeys.length; index += 1){
+        console.log(`${guardaKeys[index]} => Nível: ${guardaValues[index]}`)
+    }
+}
+
+console.log(criaHabilidades(student1));
+console.log(criaHabilidades(student2));
+//Jeito 2:
+function valida (student) {
+    const guardaChaves = Object.keys(student);
+    const arrayLiteral = Object.values(student);
+    let array = [];
+    for (let i = 0; i < guardaChaves.length; i += 1){
+        array.push( `${guardaChaves[i]}, Nível: ${arrayLiteral[i]}`);
+    }
+    return array;
+}
+console.log(valida(student1));
+console.log(valida(student2));
+
+//Exercício parte III
+const student = {
+    Html: 'Muito Bom',
+    Css: 'Bom',
+    JavaScript: 'Ótimo',
+    SoftSkill: 'Ótimo',
+  };
+
+  const mostra = (student) => Object.values(student);
+
+  console.log(mostra(student));
+
+  const países = {
+    França: 'Paris',
+    Brasil: 'Brasília',
+    Espanha: 'Madrid',
+    Portugal: 'Lisboa',
+  };
+
+  const exemplo = Object.entries(países)
+  for (let i = 0; i < exemplo.length; i += 1){
+    console.log('-----------------');
+    console.log(`País: ${exemplo[i][0]}`)
+    console.log(`Capital: ${exemplo[i][1]}`);
+  };
+
+
+  const person = {
+    name: 'Roberto',
+  };
+  
+  const lastName = {
+    lastName: 'Silva',
+  };
+  
+  const clone = Object.assign(person, lastName);
+  
+  console.log(clone);
+  console.log(person); 
+
+  clone.name = 'Maria';
+
+console.log('Mudando a propriedade name através do objeto clone')
+console.log(clone); // Output: { name: 'Maria', lastName: 'Silva' }
+console.log(person); // Output: { name: 'Maria', lastName: 'Silva' }
+console.log('--------------');
+
+person.lastName = 'Ferreira';
+
+console.log('Mudando a propriedade lastName através do objeto person');
+console.log(clone); // Output: { name: 'Maria', lastName: 'Ferreira' }
+console.log(person); // Output: { name: 'Maria', lastName: 'Ferreira' }
+
+const person = {
+    name:'Roberto',
+  };
+  
+  const lastName = {
+    lastName: 'Silva',
+  };
+
+  const newPerson = Object.assign({}, person, lastName);
+
+  newPerson.data = 23;
+  console.log(newPerson);
+  console.log(person);
