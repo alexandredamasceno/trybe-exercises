@@ -78,3 +78,25 @@ assert.strictEqual(myFizzBuzz(9), 'fizz')
 assert.strictEqual(myFizzBuzz(5), 'buzz')
 assert.notStrictEqual(myFizzBuzz(7), 'fizzbuzz')
 assert.strictEqual(myFizzBuzz('9'), false);
+
+// Função 5:
+const assert = require('assert');
+
+const obj1 = {
+  title: 'My Title',
+  description: 'My Description',
+};
+
+const obj2 = {
+  description: 'My Description',
+  title: 'My Title',
+};
+
+const obj3 = {
+  title: 'My Different Title',
+  description: 'My Description',
+};
+
+assert.deepStrictEqual(obj1, obj2);
+assert.notDeepStrictEqual(obj1, obj3);
+assert.notDeepStrictEqual(obj2, obj3);
