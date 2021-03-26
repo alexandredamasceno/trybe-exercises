@@ -62,3 +62,19 @@ myRemoveWithoutCopy(meuArray, 2);
 assert.notDeepStrictEqual(meuArray, [6, 7, 2, 9]);
 assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 5), [1, 2, 3, 4]);
 
+//Função 4:
+const assert = require('assert');
+
+function myFizzBuzz(num) {
+  if (typeof num !== 'number') return false;
+  if (num % 3 === 0 && num % 5 === 0) return 'fizzbuzz';
+  if (num % 3 === 0) return 'fizz';
+  if (num % 5 === 0) return 'buzz';
+  return num;
+}
+
+assert.strictEqual(myFizzBuzz(15), 'fizzbuzz')
+assert.strictEqual(myFizzBuzz(9), 'fizz')
+assert.strictEqual(myFizzBuzz(5), 'buzz')
+assert.notStrictEqual(myFizzBuzz(7), 'fizzbuzz')
+assert.strictEqual(myFizzBuzz('9'), false);
