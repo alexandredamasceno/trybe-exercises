@@ -100,3 +100,39 @@ const obj3 = {
 assert.deepStrictEqual(obj1, obj2);
 assert.notDeepStrictEqual(obj1, obj3);
 assert.notDeepStrictEqual(obj2, obj3);
+
+//Exercícios TDD:
+//Item 1:
+const assert = require('assert');
+// escreva a função addOne aqui
+function addOne(array) {
+    
+    for (let i in array){
+        if (array[i] === 31){
+            array[i]++
+        } 
+        if (array[i] === 57){
+            array[i]++
+        }
+        if (array[i] === 12){
+            array[i]++
+        }
+        if (array[i] === 5){
+            array[i]++
+        }
+        
+    }
+    return array;
+}
+
+const myArray = [31, 57, 12, 5];
+const unchanged = [31, 57, 12, 5];
+assert.deepStrictEqual(myArray, unchanged);
+const expected = [32, 58, 13, 6];
+const output = addOne(myArray);
+console.log(addOne(output))
+console.log(myArray)
+
+assert.strictEqual(typeof addOne, 'function');
+
+assert.deepStrictEqual(output, expected);
