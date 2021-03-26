@@ -35,5 +35,30 @@ assert.notDeepStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 3, 4]);
 assert.deepStrictEqual(myRemove([1, 2, 3, 4], 5), [1, 2, 3, 4]);
 
 const newArray = [8, 9, 7, 3];
-myRemove(newArray, 9);
-assert.deepStrictEqual(newArray, [8, 9, 7,3]);
+console.log(myRemove(newArray, 9));
+
+assert.deepStrictEqual(newArray, [8, 9, 7, 3]);
+
+// Função 3:
+const assert = require('assert');
+
+function myRemoveWithoutCopy(arr, item) {
+  for (let index = 0, len = arr.length; index < len; index += 1) {
+    if (arr[index] === item) {
+      arr.splice(index, 1);
+      index -= 1;
+      len -= 1;
+    }
+  }
+
+  return arr;
+}
+
+assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 4]);
+assert.notDeepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 3), [1, 2, 3, 4]);
+
+const meuArray = [6, 7, 2, 9];
+myRemoveWithoutCopy(meuArray, 2);
+assert.notDeepStrictEqual(meuArray, [6, 7, 2, 9]);
+assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 5), [1, 2, 3, 4]);
+
