@@ -9,3 +9,12 @@ test('Testando soma', () => {
     expect(sum).toHaveBeenCalled();
     expect(sum()).toBe(10);
 })
+
+test('New implementation', () => {
+    script.getNumber = jest.fn().mockImplementation((a, b) => a / b);
+
+    script.getNumber(10, 5);
+    expect(script.getNumber).toHaveBeenCalled();
+    expect(script.getNumber(10, 5)).toBe(2);
+    expect(script.getNumber).toHaveBeenCalledTimes(2);
+})
