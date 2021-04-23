@@ -18,3 +18,20 @@ test('New implementation', () => {
     expect(script.getNumber(10, 5)).toBe(2);
     expect(script.getNumber).toHaveBeenCalledTimes(2);
 })
+
+test('New implementation two', () => {
+    script.getNumber = jest.fn().mockImplementation((a, b, c) => (a * b) * c);
+
+    script.getNumber(2, 2, 2);
+    expect(script.getNumber).toHaveBeenCalled();
+    expect(script.getNumber(2, 2, 2)).toBe(8);
+    expect(script.getNumber).toHaveBeenCalledTimes(2);
+
+    script.getNumber.mockRestore();
+    script.getNumber = jest.fn().mockImplementation((a) => a * 2);
+
+    script.getNumber(2);
+    expect(script.getNumber).toHaveBeenCalled();
+    expect(script.getNumber(4)).toBe(8);
+    expect(script.getNumber).toHaveBeenCalledTimes(2);
+})
