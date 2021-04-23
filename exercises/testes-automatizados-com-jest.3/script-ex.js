@@ -12,15 +12,13 @@ function firstWord(string) {
     return string.substr(0, 1);
 }
 
-// async function getAnimal() {
-//     const animal = await fetch('https://dog.ceo/api/breeds/image/random')
-//     animal.then(response => response.message).catch(error => error)
-//     return animal;
-// }
-// console.log(getAnimal())
+function fetchDog() {
+    return fetch("https://dog.ceo/api/breeds/image/random").then(response => 
+    response.json().then(pets => response.ok ? Promise.resolve(pets) : Promise.reject(pets)))
+}
 
 function concatString(string1, string2) {
     return string1.concat(string2);
 }
 
-module.exports = { getNumber, upperCase, firstWord, concatString }
+module.exports = { getNumber, upperCase, firstWord, concatString, fetchDog }

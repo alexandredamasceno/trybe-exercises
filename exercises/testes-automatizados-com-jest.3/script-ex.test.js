@@ -62,3 +62,19 @@ test('New implementation to the concat', () => {
     expect(script.concatString("Hello", "world", "!")).toBe("Helloworld!");
     expect(script.concatString).toHaveBeenCalledTimes(2);
 })
+
+test('Testando função assíncrona', () => {
+    const pets = jest.spyOn(script, 'fetchDog');
+    pets.mockResolvedValue('request sucess');
+
+    pets();
+    expect(pets).toHaveBeenCalled();
+    expect(pets()).resolves.toBe('request sucess');
+    
+    pets.mockRestore();
+    pets.mockRejectedValue('request failed');
+
+    pets();
+    expect(pets).toHaveBeenCalled();
+    expect(pets()).rejects.toBe('request failed');
+})
