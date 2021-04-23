@@ -35,3 +35,30 @@ test('New implementation two', () => {
     expect(script.getNumber(4)).toBe(8);
     expect(script.getNumber).toHaveBeenCalledTimes(2);
 })
+
+test('New implementation to the upperCase', () => {
+    script.upperCase = jest.fn().mockImplementation((string) => string.toLowerCase());
+
+    script.upperCase("AMOR");
+    expect(script.upperCase).toHaveBeenCalled();
+    expect(script.upperCase('AMOR')).toBe('amor');
+    expect(script.upperCase).toHaveBeenCalledTimes(2);
+})
+
+test('New implementation to first word', () => {
+    script.firstWord = jest.fn().mockImplementation((string) => string.substr(string.length - 1));
+
+    script.firstWord("Amor");
+    expect(script.firstWord).toHaveBeenCalled();
+    expect(script.firstWord('Amor')).toBe('r');
+    expect(script.firstWord).toHaveBeenCalledTimes(2);
+})
+
+test('New implementation to the concat', () => {
+    script.concatString = jest.fn().mockImplementation((string1, string2, string3 ) => `${string1}${string2}${string3}`);
+
+    script.concatString("Hello", "world", "!");
+    expect(script.concatString).toHaveBeenCalled();
+    expect(script.concatString("Hello", "world", "!")).toBe("Helloworld!");
+    expect(script.concatString).toHaveBeenCalledTimes(2);
+})
