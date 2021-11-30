@@ -1,3 +1,6 @@
+import math
+
+
 def big_number(num1, num2):
     if num1 > num2:
         return num1
@@ -49,3 +52,15 @@ def big_name(list):
 
 
 print(big_name(["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"]))
+
+
+def qntd_tinta(metros):
+    price_per_cans_of_18liters = 80.00
+    liters = metros / 3
+    cans = math.ceil(liters / 18)
+    total_price = cans * price_per_cans_of_18liters
+    total = (cans, total_price)
+    return total
+
+
+print(qntd_tinta(60))
