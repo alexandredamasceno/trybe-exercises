@@ -29,3 +29,6 @@ def asteriscos(n):
 
 
 asteriscos(8)
+
+
+print(3 * 'bla')
