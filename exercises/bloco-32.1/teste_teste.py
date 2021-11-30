@@ -18,3 +18,14 @@ def media(list):
 
 
 print(media([1, 2, 3, 4, 5]))
+
+
+def asteriscos(n):
+    qntd = ''
+    for index in range(n):
+        qntd += '*'
+    for go in range(n):
+        print(qntd)
+
+
+asteriscos(8)
