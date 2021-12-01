@@ -64,3 +64,17 @@ def qntd_tinta(metros):
 
 
 print(qntd_tinta(60))
+
+
+def witch_triang(l1, l2, l3):
+    if l1 + l2 < l3:
+        return "não é um triangulo"
+    elif l1 == l2 and l1 == l3 and l3 == l2:
+        return "Triângulo Equilátero"
+    elif l1 == l2 or l1 == l3 or l3 == l2:
+        return "Triângulo Isósceles"
+    else:
+        return "Triângulo Escaleno"
+
+
+print(witch_triang(30, 10, 20))
